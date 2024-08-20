@@ -20,6 +20,8 @@ editor: visual
 | 2023 | 9                        | 85          | Chuvas moderadas                   |
 
 ```{r}
+
+library(dplyr)
 dados<-read.csv("tab.csv",sep=";",dec=".")
 grafico  
 
