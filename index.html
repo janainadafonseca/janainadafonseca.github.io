@@ -96,10 +96,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>Leptospirose A leptospirose é uma doença infecciosa causada pela Leptospira interrogans. Ela é transmitida a partir da exposição direta ou indireta à urina de animais infectados, principalmente roedores.</p>
-<p>Em situações de enchentes e inundações, a urina dos ratos, presente em esgotos e bueiros, mistura-se à enxurrada e à lama das enchentes. Qualquer pessoa que tiver contato com a água das chuvas ou lama contaminadas pode se infectar.</p>
-<p>A bactéria presente na água penetra o corpo humano pela pele ou mucosa. Bovinos, suínos e cães também podem adoecer e transmitir a leptospirose aos humanos.</p>
-<p>Embora, na maioria das vezes, a leptospirose seja assintomática, o quadro da doença pode evoluir e causar falência de órgãos. Segundo o Ministério da Saúde, a doença apresenta uma letalidade média de 9%.</p>
+<p><a href="pag1.html">Clique aqui para entender sobre a Leptospirose</a></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="https://s2-g1.glbimg.com/11xSYj4rgEidi2c_PdtW-y_U6kA=/0x0:1920x1080/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/k/N/wfLbJgTki57JuSZAYBdQ/triunfo-boff-ja-3105-1-frame-4245.jpg" class="img-fluid figure-img"></p>
@@ -114,10 +111,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 6%">
-<col style="width: 37%">
-<col style="width: 18%">
-<col style="width: 37%">
+<col style="width: 19%">
+<col style="width: 30%">
+<col style="width: 19%">
+<col style="width: 30%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -167,7 +164,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tbody>
 </table>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
 Anexando pacote: 'dplyr'</code></pre>
@@ -182,45 +178,19 @@ Anexando pacote: 'dplyr'</code></pre>
 
     intersect, setdiff, setequal, union</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>dados<span class="ot">&lt;-</span><span class="fu">read.csv</span>(<span class="st">"tab.csv"</span>,<span class="at">sep=</span><span class="st">";"</span>,<span class="at">dec=</span><span class="st">"."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>dados <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"tab.csv"</span>,<span class="at">sep=</span><span class="st">";"</span>,<span class="at">dec=</span><span class="st">"."</span>)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>grafico <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(dados, <span class="fu">aes</span>(<span class="at">x =</span> C1)) <span class="sc">+</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> C3, <span class="at">color =</span> <span class="st">"Casos de Leptospirose"</span>), <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">y =</span> C2, <span class="at">color =</span> <span class="st">"Municípios Afetados"</span>), <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">name =</span> <span class="st">"Casos de Leptospirose"</span>, </span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>                     <span class="at">sec.axis =</span> <span class="fu">sec_axis</span>(<span class="sc">~</span> ., <span class="at">name =</span> <span class="st">"Municípios Afetados"</span>)) <span class="sc">+</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Casos de Leptospirose por Ano e Municípios Afetados por Enchente"</span>,</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Ano"</span>) <span class="sc">+</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"Casos de Leptospirose"</span> <span class="ot">=</span> <span class="st">"blue"</span>, </span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>                                <span class="st">"Municípios Afetados"</span> <span class="ot">=</span> <span class="st">"red"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
-ℹ Please use `linewidth` instead.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>grafico  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
+<p>Gráfico</p>
+<p>library(ggplot2) dados &lt;- read.csv(“tab.csv”,sep=“;”,dec=“.”)</p>
+<p>grafico &lt;- ggplot(dados, aes(x = C1)) + geom_line(aes(y = C3, color = “Casos de Leptospirose”), size = 1) + geom_line(aes(y = C2, color = “Municípios Afetados”), size = 1) + scale_y_continuous(name = “Casos de Leptospirose”, sec.axis = sec_axis(~ ., name = “Municípios Afetados”)) + labs(title = “Casos de Leptospirose por Ano e Municípios Afetados por Enchente”, x = “Ano”) + theme_minimal() + scale_color_manual(values = c(“Casos de Leptospirose” = “blue”, “Municípios Afetados” = “red”))</p>
 <p>Abaixo, criei uma fórmula genérica para calcular a média de casos por cidade em cada ano:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>mediacasos<span class="ot">&lt;-</span>(dados<span class="sc">$</span>C3)<span class="sc">/</span>(dados<span class="sc">$</span>C2)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>mediacasos</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>mediacasos<span class="ot">&lt;-</span>(dados<span class="sc">$</span>C3)<span class="sc">/</span>(dados<span class="sc">$</span>C2)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>mediacasos</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 12.500000 11.250000 14.666667 13.000000 16.666667  9.444444</code></pre>
 </div>
 </div>
 <p><a href="https://g1.globo.com/rs/rio-grande-do-sul/noticia/2024/05/31/leptospirose-apos-cheias-rs.ghtml">matéria completa</a></p>
-<p><a href="index.html">Acesse a página inicial</a></p>
 
 </main>
 <!-- /main column -->

@@ -4,36 +4,25 @@ format: html
 editor: visual
 ---
 
-Leptospirose
-A leptospirose é uma doença infecciosa causada pela Leptospira interrogans. Ela é transmitida a partir da exposição direta ou indireta à urina de animais infectados, principalmente roedores.
-
-Em situações de enchentes e inundações, a urina dos ratos, presente em esgotos e bueiros, mistura-se à enxurrada e à lama das enchentes. Qualquer pessoa que tiver contato com a água das chuvas ou lama contaminadas pode se infectar.
-
-A bactéria presente na água penetra o corpo humano pela pele ou mucosa. Bovinos, suínos e cães também podem adoecer e transmitir a leptospirose aos humanos.
-
-Embora, na maioria das vezes, a leptospirose seja assintomática, o quadro da doença pode evoluir e causar falência de órgãos. Segundo o Ministério da Saúde, a doença apresenta uma letalidade média de 9%.
+[Clique aqui para entender sobre a Leptospirose](pag1.html)
 
 ![Enchente](https://s2-g1.glbimg.com/11xSYj4rgEidi2c_PdtW-y_U6kA=/0x0:1920x1080/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/k/N/wfLbJgTki57JuSZAYBdQ/triunfo-boff-ja-3105-1-frame-4245.jpg)
 
-
 ![Atleta morte](https://s2-g1.glbimg.com/wX3lZCi3kMsIrXYtrFdG0Vf01g8=/0x0:1920x1280/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/9/S/BAV1h5TayiFejHXIEe5A/atleta-luisa.jpg)
 
-Ano | Municípios com enchentes| Nº de Casos| Observações            
-----| ------------------------|------------|------------------------
-2018|      12                 |150         |Enchente intensa no Vale Taquari    
-2019|       8                 |90          |Chuvas concentradas no inverno   
-2020|      15                 |220         |Enchente generalizada no estado
-2021|      10                 |130         |Prevenção e controle mais efetivos
-2022|      18                 |300         |Piora das condições sanitárias
-2023|       9                 |85          |Chuvas moderadas
+| Ano  | Municípios com enchentes | Nº de Casos | Observações                        |
+|------|--------------------------|-------------|------------------------------------|
+| 2018 | 12                       | 150         | Enchente intensa no Vale Taquari   |
+| 2019 | 8                        | 90          | Chuvas concentradas no inverno     |
+| 2020 | 15                       | 220         | Enchente generalizada no estado    |
+| 2021 | 10                       | 130         | Prevenção e controle mais efetivos |
+| 2022 | 18                       | 300         | Piora das condições sanitárias     |
+| 2023 | 9                        | 85          | Chuvas moderadas                   |
 
 ```{r}
-
-library(dplyr)
 dados<-read.csv("tab.csv",sep=";",dec=".")
-```
+grafico  
 
-```{r}
 library(ggplot2)
 dados <- read.csv("tab.csv",sep=";",dec=".")
 
@@ -46,9 +35,9 @@ grafico <- ggplot(dados, aes(x = C1)) +
        x = "Ano") +
   theme_minimal() +
   scale_color_manual(values = c("Casos de Leptospirose" = "blue", 
-                                "Municípios Afetados" = "red"))
+                                "Municípios Afetados" = "red")
 
-grafico  
+
 ```
 
 Abaixo, criei uma fórmula genérica para calcular a média de casos por cidade em cada ano:
@@ -59,5 +48,3 @@ mediacasos
 ```
 
 [matéria completa](https://g1.globo.com/rs/rio-grande-do-sul/noticia/2024/05/31/leptospirose-apos-cheias-rs.ghtml)
-
-[Acesse a página inicial](index.html)  
