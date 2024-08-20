@@ -10,43 +10,28 @@ editor: visual
 
 ![Atleta morte](https://s2-g1.glbimg.com/wX3lZCi3kMsIrXYtrFdG0Vf01g8=/0x0:1920x1280/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/9/S/BAV1h5TayiFejHXIEe5A/atleta-luisa.jpg)
 
-| Ano  | Municípios com enchentes | Nº de Casos | Observações                        |
-|------|--------------------------|-------------|------------------------------------|
-| 2018 | 12                       | 150         | Enchente intensa no Vale Taquari   |
-| 2019 | 8                        | 90          | Chuvas concentradas no inverno     |
-| 2020 | 15                       | 220         | Enchente generalizada no estado    |
-| 2021 | 10                       | 130         | Prevenção e controle mais efetivos |
-| 2022 | 18                       | 300         | Piora das condições sanitárias     |
-| 2023 | 9                        | 85          | Chuvas moderadas                   |
-
-```{r}
-
-library(dplyr)
-dados<-read.csv("tab.csv",sep=";",dec=".")
-grafico  
-
-library(ggplot2)
-dados <- read.csv("tab.csv",sep=";",dec=".")
-
-grafico <- ggplot(dados, aes(x = C1)) +
-  geom_line(aes(y = C3, color = "Casos de Leptospirose"), size = 1) +
-  geom_line(aes(y = C2, color = "Municípios Afetados"), size = 1) +
-  scale_y_continuous(name = "Casos de Leptospirose", 
-                     sec.axis = sec_axis(~ ., name = "Municípios Afetados")) +
-  labs(title = "Casos de Leptospirose por Ano e Municípios Afetados por Enchente",
-       x = "Ano") +
-  theme_minimal() +
-  scale_color_manual(values = c("Casos de Leptospirose" = "blue", 
-                                "Municípios Afetados" = "red")
-
-
+```{r echo=FALSE}
+library(readxl)
+dados = read_xlsx("tab.xlsx")
+library(knitr)
+kable(dados)
+plot(dados$C1,  dados$C3, ty='b')
 ```
+
 
 Abaixo, criei uma fórmula genérica para calcular a média de casos por cidade em cada ano:
 
-```{r}
+
+
 mediacasos<-(dados$C3)/(dados$C2)
 mediacasos
-```
 
-[matéria completa](https://g1.globo.com/rs/rio-grande-do-sul/noticia/2024/05/31/leptospirose-apos-cheias-rs.ghtml)
+
+
+
+
+
+
+
+
+[matéria completa](https://g1.globo.com/rs/rio-grande-do-sul/noticia/2024/05/31/lept/ospirose-apos-cheias-rs.ghtml)
