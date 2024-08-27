@@ -19,14 +19,26 @@ kable(dados)
 ```
 
 
-Abaixo, criei uma fórmula genérica para calcular a média de casos por cidade em cada ano:
+Abaixo, criei uma fórmula genérica para calcular a média de casos por cidade:
 
 
 
 
-```{r}
+Média=$${150+90+220+130+300+85}/{6}$$
+
+
+Média= $${\frac{150+90+220+130+300+85}{6}}$$
+Média=$${\frac{975}{6}}$$
+Média=$$162,5$$
+
+
+
+
+```{r echo=FALSE}
 plot(dados$C1, dados$C3, type = "p", xlab = "Eixo X", ylab = "Eixo Y", main = "Gráfico com Linhas Conectando Pontos")
 lines(dados$C1, dados$C3)
+abline(h=mean(dados$C3))
+mean(dados$C3)
 ```
 
 
@@ -34,10 +46,7 @@ lines(dados$C1, dados$C3)
 
 
 
-
-
-
-
+git add -A && git commit -m "staging all files"
 
 
 [matéria completa](https://g1.globo.com/rs/rio-grande-do-sul/noticia/2024/05/31/leptospirose-apos-cheias-rs.ghtml)
