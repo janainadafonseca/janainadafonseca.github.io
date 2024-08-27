@@ -46,7 +46,6 @@ mean(dados$C3)
 
 
 
-git add -A && git commit -m "staging all files"
 
 
 [matéria completa](https://g1.globo.com/rs/rio-grande-do-sul/noticia/2024/05/31/leptospirose-apos-cheias-rs.ghtml)
