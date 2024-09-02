@@ -1,0 +1,6 @@
+---
+title: "Leptospirose no RS"
+author: "Janaína da Fonseca"
+format: revealjs
+editor: visual
+---

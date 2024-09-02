@@ -1,0 +1,22 @@
+---
+title: "Aplicação da Modelagem Espacial Bayesiana utilizando os Métodos INLA e SPDE nas Ocorrências de Leptospirose em Áreas Alagadas do Rio Grande do Sul"
+author: "Janaína da Fonseca"
+format: revealjs
+editor: visual
+---
+
+### 
+
+## 1.Introdução
+
+A leptospirose é uma doença infecciosa comumente associada a áreas alagadas , sendo um problema de saúde pública significativo no Rio Grande do Sul, ultimamente. Devido à sua associação com eventos climáticos e ambientais, como chuvas intensas e alagamentos ocorridos frequentemente, logo, a análise espacial bayesiana dessa doença requer abordagens geoestatísticas avançadas que possam capturar a complexidade das interações espaço-temporais.
+
+---
+## 1.Introdução
+
+Destacamos que, o trabalho tem o objetivo de oferecer uma análise abrangente e fundamentada sobre a Aplicação da Modelagem Espacial Bayesiana utilizando os Métodos INLA e SPDE nas Ocorrências de Leptospirose em Áreas Alagadas do Rio Grande do Sul e fornecer uma visão atualizada da literatura existente e apontar potenciais áreas de crescimento para futuras pesquisas.
+---
+
+## 2.Metodologia
+
+\[![](https://github.com/janainadafonseca/janainadafonseca.github.io/raw/main/Metodologia.jpg)
