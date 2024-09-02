@@ -5,18 +5,34 @@ format: revealjs
 editor: visual
 ---
 
-### 
+# 1. Introdução
 
-## 1.Introdução
+A leptospirose é uma doença infecciosa comumente associada a áreas alagadas, sendo um problema de saúde pública significativo no Rio Grande do Sul, ultimamente. Devido à sua associação com eventos climáticos e ambientais, como chuvas intensas e alagamentos ocorridos frequentemente, a análise espacial bayesiana dessa doença requer abordagens geoestatísticas avançadas que possam capturar a complexidade das interações espaço-temporais.
 
-A leptospirose é uma doença infecciosa comumente associada a áreas alagadas , sendo um problema de saúde pública significativo no Rio Grande do Sul, ultimamente. Devido à sua associação com eventos climáticos e ambientais, como chuvas intensas e alagamentos ocorridos frequentemente, logo, a análise espacial bayesiana dessa doença requer abordagens geoestatísticas avançadas que possam capturar a complexidade das interações espaço-temporais.
+------------------------------------------------------------------------
 
----
-## 1.Introdução
+## 1.1 Objetivos
 
-Destacamos que, o trabalho tem o objetivo de oferecer uma análise abrangente e fundamentada sobre a Aplicação da Modelagem Espacial Bayesiana utilizando os Métodos INLA e SPDE nas Ocorrências de Leptospirose em Áreas Alagadas do Rio Grande do Sul e fornecer uma visão atualizada da literatura existente e apontar potenciais áreas de crescimento para futuras pesquisas.
----
+O trabalho tem o objetivo de oferecer uma análise abrangente e fundamentada sobre a aplicação da modelagem espacial bayesiana utilizando os métodos INLA e SPDE nas ocorrências de leptospirose em áreas alagadas do Rio Grande do Sul. Além disso, visa fornecer uma visão atualizada da literatura existente e apontar potenciais áreas de crescimento para futuras pesquisas.
 
-## 2.Metodologia
+# 2. Metodologia
 
-\[![](https://github.com/janainadafonseca/janainadafonseca.github.io/raw/main/Metodologia.jpg)
+Fluxograma metodológico: Passos da Metodologia
+
+![](https://github.com/janainadafonseca/janainadafonseca.github.io/raw/main/Metodologia.jpg){width="80%"}
+
+# 3.Conclusão
+
+Em resumo, os autores reconhecem a modelagem espacial bayesiana utilizando INLA e SPDE, como uma abordagem poderosa e inovadora para entender e prever a distribuição de doenças como a leptospirose.Em relação ao contexto geográfico complexo, como o Rio Grande do Sul, onde as enchentes são frequentes, essa abordagem pode contribuir significativamente para a saúde pública, permitindo uma resposta mais rápida e eficaz à disseminação da doença e com isso, não só aprimora a compreensão dos padrões de distribuição da doença, mas também fortalece as estratégias de mitigação, tornando-as mais direcionadas e eficientes.
+
+# 4.Referências Bibliográficas
+
+1.  Openshaw, S., & Taylor, P. J. (2013). Advanced spatial modelling: A case for INLA and SPDE in epidemiology. In: Geospatial Analysis and Modelling of Disease (pp. 245-267). Springer. DOI: 10.1007/978-94-007-5434-1_12.
+
+2.  Rue, H., Martino, S., & Chopin, N. (2009). Approximate Bayesian inference for latent Gaussian models by using integrated nested Laplace approximations. Journal of the Royal Statistical Society: Series B (Statistical Methodology), 71(2), 319-392.
+
+3.  Santos, L. R., Silva, A. P., & Souza, M. J. (2023). Modeling spatial distribution of leptospirosis cases using INLA and SPDE in Southern Brazil. Epidemiology and Infection, 151, e45.
+
+4.  Sartini, F., Allaman, I. B., & Siqueira, A. M. (2017). Modeling leptospirosis transmission using Bayesian spatio-temporal models. Spatial and Spatio-temporal Epidemiology, 21, 37-47.
+
+5.  Silva, M. V., Lima, C. A., & Amaral, C. F. (2015). Spatial analysis of leptospirosis in southern Brazil: Identifying high-risk areas using geographic information systems (GIS). Tropical Medicine & International Health, 20(6), 743-751.
